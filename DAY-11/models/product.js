@@ -4,7 +4,7 @@ const { error } = require('console');
 const fs=require('fs');
 const path=require('path');
 
-const p=path.join(__dirname,'..','data','products.json');
+const p=path.join(__dirname,'../','data','products.json');
 
 const getProductsFromFile=(cb)=>{
         fs.readFile(p,(error,fileContent)=>{
@@ -12,7 +12,7 @@ const getProductsFromFile=(cb)=>{
             {
                 cb([]);
             }
-            cb([JSON.parse(fileContent)]);
+              cb([JSON.parse(fileContent)]);
         });
 }
 
@@ -25,7 +25,6 @@ module.exports=class Product
 
     save()
     {
-     const p=path.join(path.dirname(__dirname,'data','products.json'));
      fs.readFile(p,(error,fileContent)=>{
         getProductsFromFile(products=>{
             products.push(this);

@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    height: 4rem;
+    background-color: rgb(94, 207, 28);
+    width: auto;
+}
+
+ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li{
+    padding: 4rem;
+    color: aliceblue;
+    font-weight: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    color: rgb(218, 18, 75);
+}
